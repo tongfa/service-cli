@@ -138,6 +138,7 @@ RUN set -xe; \
 		libpq-dev \
 		libssh2-1-dev \
 		libxslt1-dev \
+		libyaml-dev \
 		unixodbc-dev \
 		zlib1g-dev \
 	"; \
@@ -208,6 +209,7 @@ RUN set -xe; \
 		redis \
 		sqlsrv \
 		xdebug \
+		yaml \
 	;\
 	docker-php-ext-enable \
 		apcu \
@@ -217,6 +219,7 @@ RUN set -xe; \
 		pdo_sqlsrv \
 		redis \
 		sqlsrv \
+		yaml \
 	;\
 	# Disable xdebug by default
 	rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini; \
